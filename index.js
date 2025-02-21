@@ -12,7 +12,8 @@ const client = new Client({
     partials: [Partials.Message, Partials.Channel, Partials.Reaction]
 });
 
-require('./modules/dblist')(client);
+
+require('./modules/publish');
 require('./modules/welcome')(client);
 require('./modules/start')(client);
 require('./modules/support').execute(client);
